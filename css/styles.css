@@ -310,8 +310,9 @@ body {
     line-height: 14px;
     letter-spacing: 0.01em;
     color: var(--text-color);
-    margin-bottom: 4px;
     outline: none;
+    margin-bottom: 4px;
+    display: inline-block;
 
 }
 
@@ -367,6 +368,7 @@ body {
     color: var(--accent-color);
     position: relative;
     text-decoration: none;
+    margin-left: 5px;
 }
 
 .conditions::after {
@@ -377,8 +379,12 @@ body {
     height: 1px;
     border-radius: 0.1px;
     position: absolute;
-    bottom: -1px;
+    bottom: 1px;
     right: 0;
+}
+.modal-field {
+display: flex;
+justify-content: center;
 }
 
 .modal-btn {
@@ -386,13 +392,13 @@ body {
     background: var(--accent-color);
     border-radius: 4px;
     border: none;
+    font-weight: 700;
     color: var(--white-color);
     letter-spacing: 0.06em;
     width: 200px;
     display: inline-block; 
     margin: 0 auto;
     text-align: center;
-    transition: box-shadow 250ms var(--cubic);
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms var(--cubic);
@@ -414,11 +420,17 @@ body {
     padding: 12px 16px;
     max-width: 448px;
     outline: none;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+
 }
 
 .modal-comment:focus  {
     border-color: var(--accent-color);
-
+    
     /* outline: 1px solid #188CE8; */
     
 }
@@ -437,12 +449,17 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 2px;
+    right: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
 
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    fill: var(--accent-color);
 }
 
 /* -----------------------ADVANTAGES------------------------ */
@@ -771,6 +788,7 @@ body {
     height: 50px;
     padding-left: 16px;
     outline: none;
+    color: var(--white-color);
 
     }
 
